@@ -1,0 +1,17 @@
+# eclipse ignore
+.settings/
+.project
+.classpath
+
+# idea ignore
+.idea/
+*.ipr
+*.iml
+*.iws
+
+.history/
+.vscode/
+
+# system ignore
+.DS_Store
+Thumbs.db
