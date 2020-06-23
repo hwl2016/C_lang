@@ -39,22 +39,22 @@ class Trace {
 int main(){
     // trace("Hello, World");
 
-    FILE* f;
-    fopen_s(&f, "demo01.txt", "w");
-    Trace t(f);
-    t.on();
-    t.print("Hello\n");
-    t.off();
-    t.print("World\n");
-    fclose(f);
+    // FILE* f;
+    // fopen_s(&f, "demo01.txt", "w");
+    // Trace t(f);
+    // t.on();
+    // t.print("Hello\n");
+    // t.off();
+    // t.print("World\n");
+    // fclose(f);
 
-    // std::ofstream outfile;
-    // outfile.open ("test.txt");
-    // outfile.write ("This is an apple", 16);
-    // long pos = outfile.tellp();
-    // outfile.seekp (pos-7);
-    // outfile.write (" sam",4);
-    // outfile.close();
+    std::ofstream outfile;
+    outfile.open ("test.txt");
+    outfile.write ("This is an apple", 16);
+    long pos = outfile.tellp();
+    outfile.seekp (pos-7);
+    outfile.write (" sam",4);
+    outfile.close();
 
     return 0;
 }
